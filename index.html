@@ -34,44 +34,78 @@
             background: beige;
             order: 2;
         }
-        header, footer {
+        header {
             font-size: 50px;
             background: yellowgreen;
             height: 20vh;
             text-align: center;
+            position: relative;
+        }
+        footer {
+            font-size: 50px;
+            background: yellowgreen;
+            height: 20vh;
+            width: 100%;
+            text-align: center;
+            position:relative;
+            top:0;
+            left: 0;
+
         }
         header, footer, article, nav{
             padding: 1em;
         }
-
         aside, p{
             padding: 0.5em;
             font-size: 15px;
         }
-
         nav, h2{
             font-size: 20px;
         }
         nav:hover, h2:hover {
             background-color: white;
             color: black;
-}
-
-
+        }
         .cards {
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
-            flex-direction: column;
+            justify-content: center;
             max-height: 100vh;
         }
-        .cards img {
+        .cards img, .card img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
             margin: 10px;
             border: 2px solid #000;
-            box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-            max-width: 28vw;
+            box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
         }
-
+        .card img {
+            width: 190px;
+            height: 150px;
+            object-fit:cover;
+            text-align: center;
+            margin: 1px;
+            border: 1px solid #000;
+            box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.3);
+        }
+        .card {
+            width: 220px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+        }
+        .card .text {
+            padding: 0 20px 20px;
+        }
+        .card .text > button {
+            background: gray;
+            border: 0;
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -82,12 +116,38 @@
                 <img src="assest/download.jpeg" alt="Sample photo">
                 <img src="assest/images (2).jpeg" alt="Sample photo">
                 <img src="assest/download (1).jpeg" alt="Sample photo">
-                <img src="assest/download.jpeg" alt="Sample photo">
                 <img src="assest/images (1).jpeg" alt="Sample photo">
-                <img src="assest/download (1).jpeg" alt="Sample photo">
-                <img src="assest/images (2).jpeg" alt="Sample photo">
+                <img src="assest/images (10).jpeg" alt="Sample photo">
+                <img src="assest/images (11).jpeg" alt="Sample photo">
                 <img src="assest/images (3).jpeg" alt="Sample photo">
                 <img src="assest/images.jpeg" alt="Sample photo">
+                <img src="assest/images (6).jpeg" alt="Sample photo">
+            </main>
+            <main class="cards">
+                <article class="card">
+                    <img src="assest/images (11).jpeg" alt="Sample photo">
+                    <div class="text">
+                        <h3>Seamlessly visualize quality</h3>
+                        <p>The sky blazes in hues of gold and crimson, whispering farewell to the fading sun.</p>
+                        <button>Read more</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="assest/images (4).jpeg" alt="Sample photo">
+                    <div class="text">
+                        <h3>Completely Synergize</h3>
+                        <p>The sky blazes in hues of gold and crimson, whispering farewell to the fading sun.</p>
+                        <button>Read more</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="assest/images (5).jpeg" alt="Sample photo">
+                    <div class="text">
+                        <h3>Dynamically Procrastinate</h3>
+                        <p>As the sun dips below the horizon, it leaves behind a canvas of fire and dreams.</p>
+                        <button>Read more</button>
+                    </div>
+                </article>
             </main>
         </article>
         <nav>
@@ -96,10 +156,13 @@
             <h2>Cards</h2>
             <h2>Contact</h2>
         </nav>
-        <aside style="font-size: 30px"><b>Sundown</b><p>The sky blazes in hues of gold and crimson, whispering farewell to the fading sun.</p>
-            <p>The sunset reminds us that endings can be just as beautiful as beginnings.</p><p>As the sun dips below the horizon, it leaves behind a canvas of fire and dreams.</p></aside>
-        
+        <aside style="font-size: 30px"><b>Sundown</b>
+            <p>The sky blazes in hues of gold and crimson, whispering farewell to the fading sun.</p>
+            <p>The sunset reminds us that endings can be just as beautiful as beginnings.</p>
+            <p>As the sun dips below the horizon, it leaves behind a canvas of fire and dreams.</p>
+        </aside>
     </div>
-    <footer>Thankyou for visiting</footer>
+    <footer>Thank you for visiting</footer>
+    
 </body>
 </html>
