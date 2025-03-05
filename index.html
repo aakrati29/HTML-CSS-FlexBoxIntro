@@ -1,49 +1,105 @@
-<!doctype html>
-<title>Example</title>
-<style>
-  * {
-    box-sizing: border-box; 
-  }
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-  }
-  #main {
-    display: flex;
-    flex: 1;
-  }
-  #main > article {
-    flex: 1;
-    order:3;
-  }
-  #main > nav, 
-  #main > aside {
-    flex: 0 0 20vw;
-  }
-  #main > nav {
-    background: #D7E8D4;
-    order: 2;
-  }
-  #main > aside {
-    background: beige;
-    order: 2;
-  }
-  header, footer {
-    background: yellowgreen;
-    height: 20vh;
-  }
-  header, footer, article, nav, aside {
-    padding: 1em;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        * {
+            box-sizing: border-box; 
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+        #main {
+            display: flex;
+            flex: 1;
+        }
+        #main > article {
+            flex: 1;
+            order: 3;
+        }
+        #main > nav, 
+        #main > aside {
+            flex: 0 0 20vw;
+        }
+        #main > nav {
+            background: #D7E8D4;
+            order: 2;
+        }
+        #main > aside {
+            background: beige;
+            order: 2;
+        }
+        header, footer {
+            font-size: 50px;
+            background: yellowgreen;
+            height: 20vh;
+            text-align: center;
+        }
+        header, footer, article, nav{
+            padding: 1em;
+        }
+
+        aside, p{
+            padding: 0.5em;
+            font-size: 15px;
+        }
+
+        nav, h2{
+            font-size: 20px;
+        }
+        nav:hover, h2:hover {
+            background-color: white;
+            color: black;
+}
+
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: column;
+            max-height: 100vh;
+        }
+        .cards img {
+            margin: 10px;
+            border: 2px solid #000;
+            box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+            max-width: 28vw;
+        }
+
+    </style>
+</head>
 <body>
-  <header>Header</header>
-  <div id="main">
-    <article>Article</article>
-    <nav>Nav</nav>
-    <aside>Aside</aside>
-  </div>
-  <footer>Footer</footer>
+    <header>WELCOME, To The Sunset Point</header>
+    <div id="main">
+        <article>
+            <main class="cards">
+                <img src="assest/download.jpeg" alt="Sample photo">
+                <img src="assest/images (2).jpeg" alt="Sample photo">
+                <img src="assest/download (1).jpeg" alt="Sample photo">
+                <img src="assest/download.jpeg" alt="Sample photo">
+                <img src="assest/images (1).jpeg" alt="Sample photo">
+                <img src="assest/download (1).jpeg" alt="Sample photo">
+                <img src="assest/images (2).jpeg" alt="Sample photo">
+                <img src="assest/images (3).jpeg" alt="Sample photo">
+                <img src="assest/images.jpeg" alt="Sample photo">
+            </main>
+        </article>
+        <nav>
+            <h2>Home</h2>
+            <h2>Images</h2>
+            <h2>Cards</h2>
+            <h2>Contact</h2>
+        </nav>
+        <aside style="font-size: 30px"><b>Sundown</b><p>The sky blazes in hues of gold and crimson, whispering farewell to the fading sun.</p>
+            <p>The sunset reminds us that endings can be just as beautiful as beginnings.</p><p>As the sun dips below the horizon, it leaves behind a canvas of fire and dreams.</p></aside>
+        
+    </div>
+    <footer>Thankyou for visiting</footer>
 </body>
+</html>
