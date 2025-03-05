@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Flexbox Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #ff7043;
+            color: black;
+            text-align: center;
+            padding: 45px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+        }
+        .left-sidebar, .right-sidebar {
+            width: 20%;
+            padding: 20px;
+        }
+        .left-sidebar {
+            background-color: #f4c542;
+        }
+        .right-sidebar {
+            background-color: #e91e63;
+        }
+        main {
+            width: 60%;
+            padding: 20px;
+            background-color: #00bcd4;
+        }
+        .article {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #8bc34a;
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER - Sample Flexbox Example</header>
+    <div class="container">
+        <aside class="left-sidebar">Left Side Bar</aside>
+        <main>
+            <section class="article">
+                <h2>First article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter...</p>
+            </section>
+            <section class="article">
+                <h2>Second article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter...</p>
+            </section>
+            <section class="article">
+                <h2>Third article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter...</p>
+            </section>
+        </main>
+        <aside class="right-sidebar">Right Side Bar</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
